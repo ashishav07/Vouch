@@ -1,0 +1,18 @@
+{% include 'header.html' %}
+<h3> {{ maxTweet }} : Most active user </h3>
+{{ name }}
+<table class= "table">
+{% for j,k in lis %}
+<tr>
+    <td>{{ j }} <td>
+    <td>{{ k }} <td>
+</tr>
+{% endfor %} 
+</table>
+
+<a href = "http://127.0.0.1:8000/logout">
+<button class = 'btn' style = " margin: 0 auto">
+    Sign Out
+</button>
+</a>
+</html>
